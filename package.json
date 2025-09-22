@@ -19,7 +19,9 @@
     "build:linux": " electron-builder --linux",
     "get:ver": "electron -v&&electron -a",
     "release": "electron-builder --publish always",
-    "tailwind": "tailwindcss -i ./src/renderer/src/assets/tailwind.css -o ./src/renderer/src/assets/tailwind_out.css --watch"
+      
+    "tailwind": "tailwindcss -i ./src/renderer/src/assets/tailwind.css -o ./src/renderer/src/assets/tailwind_out.css --watch",
+    "preinstall": "npx only-allow yarn"
   },
   "dependencies": {
     "@electron-toolkit/preload": "^3.0.0",
@@ -57,5 +59,9 @@
     "typescript": "^5.5.2",
     "vite": "^5.4.2",
     "zustand": "^5.0.0-rc.2"
+  },
+  "engines": {
+    "node": "20.15.1",
+    "npm": "10.7.0"
   }
 }

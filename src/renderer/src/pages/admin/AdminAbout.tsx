@@ -29,10 +29,10 @@ export default function AdminAbout() {
           <a
             className="text-blue-500 cursor-pointer"
             onClick={async () => {
-              await ipc_call_normal(webToManMsg.OpenShell, 'https://github.com/ftyszyx/lockpass')
+              await ipc_call_normal(webToManMsg.OpenShell, 'https://github.com/appzk/lockpass')
             }}
           >
-            https://github.com/ftyszyx/lockpass
+            https://github.com/appzk/lockpass
           </a>
         </div>
       </div>
